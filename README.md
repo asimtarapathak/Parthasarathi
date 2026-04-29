@@ -2,21 +2,20 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-brightgreen)
-![Status](https://img.shields.io/badge/Status-Portfolio%20Project-success)
 ![License](https://img.shields.io/badge/License-See%20repo-lightgrey)
 
-A cross-platform DFIR CLI for artifact collection, browser forensics, and guided incident response—supporting Windows, Windows Server, Linux, and macOS with menu-driven workflows.
+A cross-platform DFIR CLI for artifact collection, browser forensics, and guided incident response supporting Windows, Windows Server, Linux, and macOS with menu-driven workflows.
 
-> **Portfolio focus:** Demonstrates practical DFIR triage, artifact collection, browser forensics, and response actions in a single tool.
+<img width="2752" height="1536" alt="prototype 1 jpg" src="https://github.com/user-attachments/assets/e4c112b1-d459-4023-8344-b73c0909cb97" />
 
 ## Quick Start
 
 1. Clone the repository and enter the project folder.
 2. Create and activate a Python virtual environment.
-3. Install dependencies and launch the CLI.
+3. Install dependencies and launch the CLI in admin-user mode.
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/asimtarapathak/Parthasarathi.git
 cd ParthaSarathi
 
 python -m venv .venv
@@ -26,12 +25,12 @@ python -m venv .venv
 # source .venv/bin/activate
 
 pip install -r requirements.txt
-python parthasarathi.py
+sudo python parthasarathi.py
 ```
 
 ## Overview
 
-This project was built as a practical DFIR portfolio tool to demonstrate:
+This project was built as a practical DFIR tool to demonstrate:
 
 - Cross-platform artifact collection
 - Incident response triage and containment
@@ -135,22 +134,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Binary Permissions on Linux/macOS
-
-If you are using bundled binaries, make them executable where needed:
-
-```bash
-chmod +x bin/linux/osqueryi
-chmod +x bin/macos/osqueryi 2>/dev/null || true
-chmod +x bin/macos/osqueryd 2>/dev/null || true
-```
-
 ## How to Run
 
 Start the CLI with:
 
 ```bash
-python parthasarathi.py
+sudo python parthasarathi.py
 ```
 
 Then use the interactive menus to choose:
@@ -327,7 +316,7 @@ Where direct database access is blocked, the tool uses fallbacks and shows a cle
 
 ## Sample Output / Screenshots
 
-> Placeholder: add real screenshots here before publishing the repository publicly.
+> Placeholder: will add screenshots soon
 
 | Platform | Screenshot placeholders |
 |---|---|
@@ -335,28 +324,6 @@ Where direct database access is blocked, the tool uses fallbacks and shows a cle
 | Windows Server | Artifact menu, Active Directory-focused view, incident response actions, isolation or WinRM workflow |
 | Linux | Main menu, artifact collection result table, incident response menu, firewall or host isolation workflow |
 | macOS | Main menu, artifact collection result table, incident response menu, Safari or privacy-aware artifact workflow |
-
-## Challenges and Lessons Learned
-
-- Cross-platform DFIR tools must adapt to different native command sets and privilege models.
-- Browser artifacts often require privacy-aware fallback handling, especially on macOS.
-- osquery support can vary by platform and binary packaging, so readiness checks are important.
-- A menu-driven approach helps simplify analyst workflows during triage, especially under time pressure.
-- Using export-ready output formats improves evidence reuse for reporting and follow-up analysis.
-
-## Future Improvements
-
-- Add more unified-log presets for macOS investigations
-- Expand browser artifact timelines and correlation views
-- Add richer scoring and tagging for suspicious processes and persistence
-- Introduce a first-run system self-check and environment validation screen
-- Add more screenshot-based guidance for new users
-- Add optional report templates for DFIR case notes and evidence logs
-
-## Conclusion
-
-ParthaSarathi demonstrates a practical cross-platform DFIR and Incident Response workflow in Python.
-It combines artifact collection, guided response actions, and exportable outputs into a single analyst-friendly CLI suitable for portfolio presentation, lab use, and demonstration of DFIR engineering skills.
 
 ## Notes
 
