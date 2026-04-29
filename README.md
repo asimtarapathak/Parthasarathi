@@ -30,17 +30,27 @@ unzip ParthaSarathi-full-bundle.zip
 ```
 
 ```powershell
-# Example: after extracting ParthaSarathi-full-bundle.zip
+# Example: after extracting ParthaSarathi-full-bundle.zip, run cmd/powershell in admin mode
 cd ParthaSarathi
 
 python -m venv .venv    #(optional step)
 # Windows
 .\.venv\Scripts\activate      #(optional step)
-# Linux/macOS
-# source .venv/bin/activate
 
 pip install -r requirements.txt
-sudo python parthasarathi.py
+python parthasarathi.py
+```
+
+```linux/macos
+# Example: after extracting ParthaSarathi-full-bundle.zip,
+cd ParthaSarathi
+
+python3 -m venv .venv    #(optional step)
+# Linux/macOS
+# source .venv/bin/activate   #(optional step)
+
+pip3 install -r requirements.txt
+sudo python3 parthasarathi.py
 ```
 
 ## First Run: Readiness Check
