@@ -12,16 +12,16 @@ A cross-platform DFIR CLI for artifact collection, browser forensics, and guided
 
 1. Download the latest `ParthaSarathi-full-bundle.zip` from the repository's **Releases** page.
 2. Extract the ZIP to a local folder.
-3. Create and activate a Python virtual environment.
+3. Create and activate a Python virtual environment. (optional step)
 4. Install dependencies and launch the CLI in admin-user mode.
 
 ```powershell
 # Example: after extracting ParthaSarathi-full-bundle.zip
 cd ParthaSarathi
 
-python -m venv .venv
+python -m venv .venv    #(optional step)
 # Windows
-.\.venv\Scripts\activate
+.\.venv\Scripts\activate      #(optional step)
 # Linux/macOS
 # source .venv/bin/activate
 
@@ -136,24 +136,6 @@ ParthaSarathi follows a practical DFIR workflow:
 
 6. **Execute response actions**
    - Offers guided containment and cleanup actions with dry-run support where needed.
-
-## Setup and Installation
-
-### Windows
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### Linux and macOS
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
 
 ## How to Run
 
