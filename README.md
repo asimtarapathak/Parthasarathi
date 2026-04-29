@@ -42,11 +42,11 @@ python parthasarathi.py
 ```
 
 ```linux/macos
+# Linux/macOS
 # Example: after extracting ParthaSarathi-full-bundle.zip,
 cd ParthaSarathi
 
 python3 -m venv .venv    #(optional step)
-# Linux/macOS
 # source .venv/bin/activate   #(optional step)
 
 pip3 install -r requirements.txt
