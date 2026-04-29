@@ -10,12 +10,13 @@ A cross-platform DFIR CLI for artifact collection, browser forensics, and guided
 
 ## Quick Start
 
-1. Clone the repository and enter the project folder.
-2. Create and activate a Python virtual environment.
-3. Install dependencies and launch the CLI in admin-user mode.
+1. Download the latest `ParthaSarathi-full-bundle.zip` from the repository's **Releases** page.
+2. Extract the ZIP to a local folder.
+3. Create and activate a Python virtual environment.
+4. Install dependencies and launch the CLI in admin-user mode.
 
-```bash
-git clone https://github.com/asimtarapathak/Parthasarathi.git
+```powershell
+# Example: after extracting ParthaSarathi-full-bundle.zip
 cd ParthaSarathi
 
 python -m venv .venv
@@ -26,6 +27,20 @@ python -m venv .venv
 
 pip install -r requirements.txt
 sudo python parthasarathi.py
+```
+
+The release bundle includes the CLI, supporting modules, `platforms/`, and `bin/`, so you can start directly from the extracted folder without cloning the repository.
+
+After downloading the release ZIP, extract it first:
+
+```powershell
+# Windows PowerShell
+Expand-Archive -Path ParthaSarathi-full-bundle.zip -DestinationPath ParthaSarathi
+```
+
+```bash
+# Linux / macOS
+unzip ParthaSarathi-full-bundle.zip
 ```
 
 ## Overview
@@ -330,22 +345,3 @@ Where direct database access is blocked, the tool uses fallbacks and shows a cle
 - Some Linux service families are distribution dependent and may require additional packages before they can be discovered or toggled.
 - For privileged operations, run with sufficient permissions (`sudo` on Linux, elevated shell on Windows, Full Disk Access where required on macOS).
 - Artifact availability can vary depending on the host OS version, installed tools, and local privacy settings.
-
-### Release bundle download
-
-- The full project is also published as a GitHub Release bundle so users can download everything in one file, including `bin/`.
-- Download the release ZIP from the repository's **Releases** page, then extract it locally.
-- If you use GitHub CLI, you can publish the bundle with `gh release create` and attach the ZIP as a release asset.
-- If Git LFS is not installed on a user's machine, the release ZIP is the easiest way to get the complete project without pointer files.
-
-Example extraction commands:
-
-```powershell
-# Windows PowerShell
-Expand-Archive -Path ParthaSarathi-full-bundle.zip -DestinationPath ParthaSarathi
-```
-
-```bash
-# Linux / macOS
-unzip ParthaSarathi-full-bundle.zip
-```
