@@ -1,0 +1,14 @@
+rich
+pandas
+openpyxl
+reportlab
+psutil
+
+# Optional IOC scanning support:
+# yara-python
+
+# Notes:
+# 1) Keep this file Python-package only.
+# 2) Platform system dependencies (not pip) should be installed separately.
+#    Linux examples: telnetd/xinetd/inetutils-telnetd, vsftpd/proftpd, xrdp.
+#    macOS/Windows may require elevated privileges and native tools for some artifacts/IR actions.
