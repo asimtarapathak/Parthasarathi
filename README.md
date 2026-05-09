@@ -5,6 +5,7 @@
 ![License](https://img.shields.io/badge/License-See%20repo-lightgrey)
 
 A cross-platform DFIR CLI for artifact collection, browser forensics, and guided incident response supporting Windows, Windows Server, Linux, and macOS with menu-driven workflows.
+Inspired by the charioteer and guide of Arjuna from the battlefield of Mahabharata, ParthaSarathi is designed to guide defenders through the battlefield of modern cyber threats.
 
 <img width="2752" height="1536" alt="prototype 1 jpg" src="https://github.com/user-attachments/assets/e4c112b1-d459-4023-8344-b73c0909cb97" />
 
@@ -30,6 +31,7 @@ unzip ParthaSarathi-full-bundle.zip
 ```
 
 ```powershell
+# Windows PowerShell
 # Example: after extracting ParthaSarathi-full-bundle.zip, run cmd/powershell in admin mode
 cd ParthaSarathi
 
@@ -385,8 +387,6 @@ Where direct database access is blocked, the tool uses fallbacks and shows a cle
 - Diagnostic and readiness reports are written to `outputs/` as JSON and CSV
 
 ## Sample Output / Screenshots
-
-> Placeholder: will add screenshots soon
 
 | Platform | Screenshots |
 |---|---|
